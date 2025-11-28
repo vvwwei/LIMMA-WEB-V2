@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMMA | Engineer Feeling</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Navigation injected by components.js -->
+
+    <main class="main-content">
+
+        <!-- Top Carousel Section -->
+        <section class="carousel-section">
+            <div class="carousel-track" id="carouselTrack">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920&auto=format&fit=crop');">
+                    <div class="carousel-overlay">
+                        <span class="carousel-tag">FEATURED</span>
+                        <h1 class="carousel-h1">System Evolution</h1>
+                        <p class="carousel-p">Redefining the core structure of digital intelligence.<br>重塑數位智慧的核心架構，為企業注入流動的生命力。</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1920&auto=format&fit=crop');">
+                    <div class="carousel-overlay">
+                        <span class="carousel-tag">INNOVATION</span>
+                        <h1 class="carousel-h1">Content Engine</h1>
+                        <p class="carousel-p">Automating the flow of brand storytelling.<br>自動化品牌敘事流程，讓故事如流水般源源不絕。</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1920&auto=format&fit=crop');">
+                    <div class="carousel-overlay">
+                        <span class="carousel-tag">EXPERIENCE</span>
+                        <h1 class="carousel-h1">Immersive Space</h1>
+                        <p class="carousel-p">Bridging the gap between physical and digital realms.<br>跨越虛實邊界，打造會呼吸的沉浸式場域。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Text Section -->
+        <section class="visual-hero">
+            <div class="concept-text-layer">
+                <h1 class="hero-title">Engineer <br> <span style="font-family: var(--f-display); font-weight:300; font-style:italic; color:var(--c-accent);">Feeling.</span></h1>
+                <p class="hero-sub">以科技之骨，鑄藝術之魂。<br>We are artisans of the digital age, infusing cold code with a soulful touch.</p>
+            </div>
+        </section>
+
+        <section class="solutions-section" id="services">
+            
+            <!-- 01. System -->
+            <div class="solution-card" id="work">
+                <div class="text-col">
+                    <span class="section-label">01 // System Transformation</span>
+                    <h2 class="h2-title">智慧系統重構<br><span style="font-size:0.5em; color:var(--c-text-light); display:block; margin-top:10px;">AI System Re-architecture</span></h2>
+                    <p class="body-text">
+                        我們將龐雜的舊有系統解構，如同將實體物質轉化為數位粒子。透過 AI 架構的重新運算，為企業打造具備流動性與擴展性的核心大腦。
+                        <br><br>
+                        Deconstructing legacy systems into digital particles, we rebuild corporate cores with AI for fluidity and scalability.
+                    </p>
+                    <a href="pages/system.html" class="btn-explore">
+                        Explore System <span>→</span>
+                    </a>
+                </div>
+                <div class="visual-col">
+                    <div class="comparison-wrapper">
+                        <div class="comp-header">
+                            <div class="comp-title">Optimization Case</div>
+                            <div class="comp-sub">Legacy vs AI Core</div>
+                        </div>
+                        <div class="slider-container js-slider">
+                            <div class="img-layer img-after" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop');"></div>
+                            <div class="img-layer img-before" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop'); filter: grayscale(1) contrast(1.2);"></div>
+                            <div class="slider-handle"><div class="handle-circle"></div></div>
+                            <div class="label-float lbl-before">LEGACY</div>
+                            <div class="label-float lbl-after">AI CORE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 02. Engine -->
+            <div class="solution-card reverse engine-card">
+                <div class="visual-col">
+                    <div class="comparison-wrapper">
+                        <div class="comp-header">
+                            <div class="comp-title">Restoration Case</div>
+                            <div class="comp-sub">Vintage vs Restored</div>
+                        </div>
+                        <div class="slider-container js-slider">
+                            <div class="img-layer img-after" style="background-image: url('https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?q=80&w=800&auto=format&fit=crop');"></div>
+                            <div class="img-layer img-before" style="background-image: url('https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?q=80&w=800&auto=format&fit=crop'); filter: sepia(0.8) blur(1px) grayscale(0.5) contrast(0.8) brightness(0.8); width: 50%;"></div>
+                            <div class="slider-handle" style="left: 50%;"><div class="handle-circle"></div></div>
+                            <div class="label-float lbl-before">VINTAGE</div>
+                            <div class="label-float lbl-after">RESTORED</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-col">
+                    <span class="section-label">02 // Content Engine</span>
+                    <h2 class="h2-title">內容引擎<br><span style="font-size:0.5em; color:var(--c-text-light); display:block; margin-top:10px;">Automated Brand Storytelling</span></h2>
+                    <p class="body-text">
+                        從歷史資產到現代社群，我們建立自動化的內容運轉機制。修復珍貴影像，並透過 AI 生成源源不絕的品牌故事。
+                        <br><br>
+                        From historical assets to modern social feeds, we build automated engines that restore visuals and generate endless brand stories.
+                    </p>
+                    <a href="pages/engine.html" class="btn-explore">
+                        Explore Engine <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 03. Space -->
+            <div class="solution-card">
+                <div class="text-col">
+                    <span class="section-label">03 // Immersive Space</span>
+                    <h2 class="h2-title">空間體驗工程<br><span style="font-size:0.5em; color:var(--c-text-light); display:block; margin-top:10px;">Phygital Experience</span></h2>
+                    <p class="body-text">
+                        打破物理邊界，將虛擬的光影注入實體場域。透過感測與投影技術，創造出會呼吸、會互動的沉浸式空間體驗。
+                        <br><br>
+                        Breaking physical boundaries by injecting virtual light into real spaces. We create breathing, interactive immersive experiences.
+                    </p>
+                    <a href="pages/space.html" class="btn-explore">
+                        Explore Space <span>→</span>
+                    </a>
+                </div>
+                <div class="visual-col">
+                    <div class="comparison-wrapper">
+                        <div class="comp-header">
+                            <div class="comp-title">Augmentation Case</div>
+                            <div class="comp-sub">Void vs Experience</div>
+                        </div>
+                        <div class="slider-container js-slider">
+                            <div class="img-layer img-after" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800&auto=format&fit=crop');"></div>
+                            <div class="img-layer img-before" style="background-image: url('https://images.unsplash.com/photo-1506318137071-a8bcbf90d348?q=80&w=800&auto=format&fit=crop'); filter: grayscale(1);"></div>
+                            <div class="slider-handle"><div class="handle-circle"></div></div>
+                            <div class="label-float lbl-before">VOID</div>
+                            <div class="label-float lbl-after">AUGMENTED</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="sent-overlay" id="sentOverlay">
+                <h2 class="h2-title" style="font-size:2rem;">訊息已點亮</h2>
+                <p class="body-text" style="text-align:center;">您的想法已轉化為光訊號傳遞給我們。<br>LIMMA 團隊將盡快與您聯繫。</p>
+                <button class="btn-explore" onclick="resetForm()">Send Another</button>
+            </div>
+
+            <div class="lamp-wrapper">
+                <div class="lamp-cord"></div>
+                <div class="lamp-fixture"></div>
+                <div class="lamp-bulb" id="lamp"></div>
+                <div class="contact-instruction">
+                    <p>當您書寫想法，燈火便隨之點亮。</p>
+                    <p style="margin-top:10px;">WRITE TO IGNITE</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); sendEmail();">
+                <div class="brand">
+                    <div class="logo-text" style="font-size:1.2rem;">LIMMA STUDIO</div>
+                    <div class="logo-sub">Direct Line</div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Who are you / 您的稱呼</label>
+                    <input type="text" class="form-input" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email / 電子信箱</label>
+                    <input type="email" class="form-input" placeholder="email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Message / 訊息內容</label>
+                    <textarea class="form-textarea" placeholder="Tell us about your vision..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">SEND MESSAGE</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer & Widget injected by components.js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Load Components Module -->
+    <script type="module" src="assets/js/components.js"></script>
+    
+    <script>
+        // --- 1. WebGL Logic (Prism) ---
+        function initPrismScene() {
+            const canvas = document.getElementById('webgl-canvas');
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 50;
+            camera.position.x = 0;
+            const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+            const particleCount = 1500; 
+            const geometry = new THREE.BufferGeometry();
+            const positions = new Float32Array(particleCount * 3);
+            const colors = new Float32Array(particleCount * 3);
+            const velocities = [];
+
+            for(let i = 0; i < particleCount; i++) { resetParticle(i, true); }
+
+            function resetParticle(i, initial = false) {
+                const startX = -80 - Math.random() * 40;
+                positions[i*3] = initial ? (Math.random() - 0.5) * 160 : startX;
+                positions[i*3+1] = (Math.random() - 0.5) * 20;
+                positions[i*3+2] = (Math.random() - 0.5) * 20;
+                velocities[i] = { x: 0.1 + Math.random() * 0.1, y: 0, z: 0, passedPrism: false };
+                colors[i*3] = 0.9; colors[i*3+1] = 0.9; colors[i*3+2] = 0.9;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            const particles = new THREE.Points(geometry, new THREE.PointsMaterial({ size: 0.3, vertexColors: true, transparent: true, opacity: 0.8 }));
+            scene.add(particles);
+
+            function animate() {
+                requestAnimationFrame(animate);
+                const positionsArr = particles.geometry.attributes.position.array;
+                const colorsArr = particles.geometry.attributes.color.array;
+
+                for(let i = 0; i < particleCount; i++) {
+                    const idx = i * 3;
+                    positionsArr[idx] += velocities[i].x;
+                    positionsArr[idx+1] += velocities[i].y;
+                    positionsArr[idx+2] += velocities[i].z;
+
+                    if (!velocities[i].passedPrism && positionsArr[idx] > 0) {
+                        velocities[i].passedPrism = true;
+                        const spreadFactor = (Math.random() - 0.5) * 2; 
+                        velocities[i].y = spreadFactor * 0.15;
+                        velocities[i].x *= 0.9;
+                        const hue = (spreadFactor + 1) / 2;
+                        const color = new THREE.Color().setHSL(hue * 0.8, 1.0, 0.6);
+                        colorsArr[idx] = color.r; colorsArr[idx+1] = color.g; colorsArr[idx+2] = color.b;
+                    }
+                    if (positionsArr[idx] > 80) {
+                        resetParticle(i);
+                        colorsArr[idx] = 0.9; colorsArr[idx+1] = 0.9; colorsArr[idx+2] = 0.9;
+                    }
+                }
+                particles.geometry.attributes.position.needsUpdate = true;
+                particles.geometry.attributes.color.needsUpdate = true;
+                renderer.render(scene, camera);
+            }
+            animate();
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+        }
+
+        // --- 2. Lamp & Form Logic ---
+        const contactForm = document.getElementById('contactForm');
+        const lamp = document.getElementById('lamp');
+        const inputs = contactForm.querySelectorAll('input, textarea');
+        
+        function updateLampBrightness() {
+            let filledCount = 0;
+            inputs.forEach(input => { if(input.value.length > 0) filledCount++; });
+            const intensity = 0.2 + (filledCount / inputs.length) * 0.8;
+            if (filledCount > 0) {
+                lamp.classList.add('active');
+                lamp.style.boxShadow = `0 0 ${60 * intensity}px ${20 * intensity}px rgba(255, 107, 53, ${0.4 * intensity}), inset 0 0 20px rgba(255, 107, 53, 0.2)`;
+            } else {
+                lamp.classList.remove('active');
+                lamp.style.boxShadow = 'none';
+            }
+        }
+        inputs.forEach(input => {
+            input.addEventListener('input', updateLampBrightness);
+            input.addEventListener('focus', () => {
+                if(!lamp.classList.contains('active')) lamp.classList.add('active');
+            });
+        });
+        function sendEmail() {
+            lamp.style.transition = "0.1s";
+            lamp.style.background = "#FFF";
+            lamp.style.boxShadow = "0 0 100px 50px rgba(255, 107, 53, 1)"; 
+            setTimeout(() => {
+                document.getElementById('sentOverlay').classList.add('visible');
+                lamp.style.transition = "2s ease";
+                lamp.style.boxShadow = "0 0 0 0 rgba(255,107,53,0)";
+                lamp.classList.remove('active');
+            }, 800);
+        }
+        function resetForm() {
+            document.getElementById('contactForm').reset();
+            document.getElementById('sentOverlay').classList.remove('visible');
+            lamp.classList.remove('active');
+        }
+
+        // --- 3. Comparison Slider Logic ---
+        const sliders = document.querySelectorAll('.js-slider');
+        sliders.forEach(slider => {
+            const imgBefore = slider.querySelector('.img-before');
+            const handle = slider.querySelector('.slider-handle');
+            let isDragging = false;
+
+            function updateSliderPos(x) {
+                const rect = slider.getBoundingClientRect();
+                let pos = x - rect.left;
+                if (pos < 0) pos = 0; if (pos > rect.width) pos = rect.width;
+                const percentage = (pos / rect.width) * 100;
+                imgBefore.style.width = percentage + "%";
+                handle.style.left = percentage + "%";
+            }
+            
+            const onMouseMove = (e) => { if (!isDragging) return; updateSliderPos(e.clientX); };
+            const onMouseUp = () => { isDragging = false; window.removeEventListener('mousemove', onMouseMove); window.removeEventListener('mouseup', onMouseUp); };
+            
+            slider.addEventListener('mousedown', (e) => {
+                isDragging = true; updateSliderPos(e.clientX);
+                window.addEventListener('mousemove', onMouseMove);
+                window.addEventListener('mouseup', onMouseUp);
+            });
+
+            slider.addEventListener('touchstart', (e) => {
+                isDragging = true; updateSliderPos(e.touches[0].clientX);
+                window.addEventListener('touchmove', (e) => { if (!isDragging) return; updateSliderPos(e.touches[0].clientX); }, {passive: true});
+                window.addEventListener('touchend', () => isDragging = false);
+            }, {passive: true});
+        });
+
+        // --- 4. Carousel Logic ---
+        const slides = document.querySelectorAll('.carousel-slide');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % totalSlides;
+            slides[currentSlide].classList.add('active');
+        }
+        setInterval(nextSlide, 6000); // 6s interval
+
+        document.addEventListener('DOMContentLoaded', initPrismScene);
+    </script>
+</body>
+</html>
